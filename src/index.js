@@ -74,7 +74,7 @@ class FBMessenger {
   }
 
   sendReceiptMessage (id, payload, notificationType, cb) {
-    payload.template_type = 'receipt'
+    payload.template_type = 'generic'
     const messageData = {
       'attachment': {
         'type': 'template',
